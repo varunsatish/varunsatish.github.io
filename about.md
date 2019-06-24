@@ -1,4 +1,5 @@
 ---
+layout: "Archive"
 title: "About"
 permalink: "/about/"
 ---
