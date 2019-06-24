@@ -15,7 +15,7 @@ Education
 ---------
 
 
-**BEc. (Honours), Economics and Econometrics**; University of Sydney, 2016-2019 (expected)
+**BEc. (Honours), Economics and Econometrics**; University of Sydney, (expected completion Nov. 2019)
 - Thesis title: Social Networks and Technology Adoption: Evidence from Kenya
 
 
@@ -48,7 +48,7 @@ Technical Skills
 
 **STATA/R/MATLAB:** Have used all in a university setting, currently using STATA for my honours thesis      and have done some RA work in R and MATLAB
 
-**LaTeX:** Experience writing academic style research proposals and am writing my honours thesis in         LaTeX
+**$\LaTeX$:** Experience writing academic style research proposals and am writing my honours thesis in $\LaTeX$
 
 Basic knowledge of **SQL**, **Tableau**
 
