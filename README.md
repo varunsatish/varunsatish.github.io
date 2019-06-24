@@ -14,8 +14,5 @@ If you are reading this, I hope I can help to make programming a little less sca
 P.S I am currently looking for something to do after I graduate, if you think my skills are useful to you please send me an email at `varun.satish96@gmail.com'
 
 
-![bio](![title](/assets/bio.jpg)))
-
-
-</div>
+![bio](/assets/bio.jpg))
 
