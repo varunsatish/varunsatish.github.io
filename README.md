@@ -3,56 +3,19 @@ title: "About"
 permalink: "/about/"
 ---
 
-## Installation
+My name is Varun Satish, I am a research assistant and am currently completing my honours in Economics at the University of Sydney.
 
-My name is Varun Satish
+Whilst I don't necessarily have a particular set of topics that I am particularly set on pursuing, my research interests lie at the intersection of data science and the social sciences. 
 
-## Features
+The big data revolution has given us access to an unprecedented wealth of information and it is my view that the social sciences have much to gain from borrowing tools (e.g. techiniques such as machine learning and data mining) and skills (e.g. programming) from other disciplines. There seems to exist a gap between the modes of analysis that are traditionally pursued by social scientists and those pursued by computer scientists and bridging this gap is something that I am passionate about. 
 
- - supports dark mode on macOS Mojave
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+If you are reading this, I hope I can help to make programming a little less scary. At the very least, I hope you find some of my data visualisation pretty !
 
-## Based on
+P.S I am currently looking for something to do after I graduate, if you think my skills are useful to you please send me an email at `varun.satish96@gmail.com'
 
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
 
-## Installation (jekyll-remote-theme method)
+![bio](![title](/assets/bio.jpg)))
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, add `index.html` and `archive.html` files (they can be empty but need to contain front matter) and add this to your `_config.yml`:
-
-```yaml
-remote_theme: niklasbuschmann/contrast
-
-plugins:
-  - jekyll-remote-theme
-```
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-<div class="large" markdown="1">
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50602342-6bafd400-0eb7-11e9-8275-d0986af3061f.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50602434-82562b00-0eb7-11e9-86f3-ac9b6f577843.png)
 
 </div>
 
