@@ -5,7 +5,7 @@ permalink: "/about/"
 
 ## Installation
 
-Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+My name is Varun Satish
 
 ## Features
 
