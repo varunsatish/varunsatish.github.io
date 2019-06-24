@@ -1,4 +1,7 @@
-
+---
+title: "About"
+permalink: "/about/"
+---
 
 ## Installation
 
