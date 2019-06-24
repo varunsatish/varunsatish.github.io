@@ -1,6 +1,6 @@
 ---
 title: "CV"
-permalink: "/CV/"
+permalink: "/markdown-cv/"
 ---
 
 Varun Satish
