@@ -3,24 +3,28 @@ title: "CV"
 permalink: "/CV/"
 ---
 
-# Varun Satish
+<center><span style="font-family:Didot; font-size:2.5em;"> Varun Satish</span></center>
 
-<div id="webaddress">
-<a href="varun.satish96@gmail.com">varun.satish96@gmail.com</a>
+
+<div align="center">
+    <b>Email:</b> varun.satish96@gmail.com 
+    <b>Website:</b> <a href="https://varunsatish.github.io./">https://varunsatish.github.io./</a>
+    <b>GitHub:</b> varunsatish
 </div>
 
 
-
-Education
----------
+<span style="font-family:Didot; font-size:1.5em;">Education</span>
+<br />
+- - - -
 
 
 **BEc. (Honours), Economics and Econometrics**; University of Sydney, (expected completion Nov. 2019)
 - Thesis title: Social Networks and Technology Adoption: Evidence from Kenya
 
 
-Experience
----------
+<span style="font-family:Didot; font-size:1.5em;">Experience</span>
+<br />
+- - - -
 
 **‘Coding for Economists’ Co-founder**
 
@@ -38,11 +42,11 @@ Experience
 - Data scraping from the web and other sources, data engineering/cleaning using Python
 
 **Academic Tutor – School of Economics, University of Sydney**
-2018 – Present
 - Introductory Macroeconomics (ECON1002), Introductory Econometrics (ECMT1020)
 
-Technical Skills
---------------------
+<span style="font-family:Didot; font-size:1.5em;">Programming Languages</span>
+<br />
+- - - -
 
 **Python:** Self-taught Python, have also had some experience with projects on GitHub
 
