@@ -3,7 +3,7 @@ title: "How To Run Python Scripts Offline or Overnight"
 date: 2019-01-17
 ---
 
-Sometimes we need to run a Python script 
+Sometimes we need to run a Python script that runs for a long time. This may involve us needing to leave something running whilst we go do other things or even overnight. If you have an old laptop like me, this just simply isn't feasible however we are able to use remote clients (think of these as computers that are located elsewhere) in order to do this. Here is a (hopefully) easy to understand and non-technical explanation of how to run Python scripts offline !
 
 ## 1. Connect to AWS instance
 
@@ -26,9 +26,6 @@ This specific terminal window is now connected to the AWS server. If we want to 
 ## 2. Put your Python scripts on the AWS instance directory
 
 Lets suppose that on my computer, I want to run a script called `hello_world.py`. 
-
-
-`
 
 If I try to run this script through the terminal window that is connected to AWS (from now on I will refer to this as the remote client) it will spit out an error that tells me the file cannot be found. What we need to do is 'upload' the file onto the AWS instance (in it's working directory).
 
