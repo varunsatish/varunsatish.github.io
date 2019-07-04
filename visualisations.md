@@ -12,9 +12,12 @@ Created using `networkx` and `matplotlib` in Python
 
 Created in MATLAB
 
-![title](/assets/forbiddenbooks.mp4))
+![Sydneymap](/assets/SydneymapSPSS_1.jpg))
+
+Created using Tableau
+
+<video width="480" height="320" controls="controls">
+  <source src="/assets/forbiddenbooks.mp4" type="video/mp4">
+</video>
 
 Created using `GeoPandas` and `matplotlib` in Python
-
-
-
