@@ -3,6 +3,9 @@ author: "Varun Satish"
 description: "Welcome to my portfolio!"
 lang: "en"
 
+#enables latex math
+mathjax: true
+
 # Page settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
