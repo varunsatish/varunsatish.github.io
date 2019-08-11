@@ -3,6 +3,12 @@ title: "Visualisations"
 permalink: "/visualisations/"
 ---
 
+![sn_euc](/assets/sn_euc.jpg)
+
+A figure illustrating the difference between Euclidean and 'Street Network' distance
+The colours represent distance travelled within a time frame
+Created using `networkx`, `osmnx` and `matplotlib` in Python
+
 
 ![socialnetwork](/assets/socialnetworkdegree.png)
 
@@ -16,8 +22,3 @@ Created in MATLAB
 
 Created using Tableau
 
-<video width="480" height="320" controls="controls">
-  <source src="/assets/forbiddenbooks.mp4" type="video/mp4">
-</video>
-
-Created using `GeoPandas` and `matplotlib` in Python
