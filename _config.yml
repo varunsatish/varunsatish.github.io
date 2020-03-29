@@ -20,11 +20,11 @@ dark_footer: false           # keep the footer dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # site navigation in the header
-  - index.html
-  - README.md
-  - projects.md
-  - visualisations.md
-  - CV_long.html
+#  - index.html
+#  - README.md
+#  - projects.md
+#  - visualisations.md
+  - Varun_Satish_CV.html
 #  - title: "https://"       # linking external sites is also supported
 
 icons:                      # icons in the header, see http://fontawesome.com/icons
