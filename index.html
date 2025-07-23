@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Satish</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f1e8;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #2c3e50;
+            font-weight: normal;
+        }
+        
+        .content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .photo-section {
+            flex-shrink: 0;
+        }
+        
+        .photo {
+            width: 250px;
+            height: 300px;
+            background-color: #d4d4d4;
+            border: 1px solid #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .bio-section {
+            flex: 1;
+        }
+        
+        .bio-section h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .bio-section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .photo {
+                width: 200px;
+                height: 250px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!!</h1>
-    <p>My website is working!</p>
+    <div class="container">
+        <div class="header">
+            <h1>Varun Satish</h1>
+        </div>
+        
+        <div class="content">
+            <div class="photo-section">
+                <div class="photo">
+                    Your photo here
+                </div>
+            </div>
+            
+            <div class="bio-section">
+                <h2>About</h2>
+                <p>Varun Satish is a PhD student in Demography at Princeton University. His current projects include using language models to study the life course, and using machine learning to uncover shifting perceptions of social class in the United States over the last 50 years.</p>
+                
+                <p>Originally from Western Sydney, he is interested in the intersection of computational methods and demographic research, exploring how new technologies can help us better understand social patterns and life trajectories.</p>
+                
+                <h2>Research Interests</h2>
+                <p>• Computational demography<br>
+                • Language models and life course analysis<br>
+                • Machine learning applications in social science<br>
+                • Social class perceptions and mobility</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
