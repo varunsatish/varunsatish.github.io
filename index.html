@@ -70,6 +70,23 @@
             text-align: justify;
         }
         
+        .paper {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0ddd4;
+        }
+        
+        .paper:last-of-type {
+            border-bottom: none;
+        }
+        
+        .abstract {
+            margin-top: 10px;
+            font-size: 0.95em;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
         @media (max-width: 768px) {
             .content {
                 flex-direction: column;
@@ -96,16 +113,34 @@
         <div class="content">
             <div class="photo-section">
                 <div class="photo">
-                    <img src="assets/website_photo.JPG" alt="Varun Satish" style="width: 100%; height: 100%; object-fit: cover;">
+                    Your photo here
                 </div>
             </div>
             
             <div class="bio-section">
                 <h2>About</h2>
-                <p>I am a PhD student in Demography at Princeton University affiliated with the Office of Population Research and the Center for Information Technology and Policy. My current projects include using language models to study the life course, and using machine learning to uncover shifting perceptions of social class in the United States over the last 50 years. I am proudly from Western Sydney.</p>
+                <p>Varun Satish is a PhD student in Demography at Princeton University. His current projects include using language models to study the life course, and using machine learning to uncover shifting perceptions of social class in the United States over the last 50 years.</p>
                 
-                <p></p>
+                <p>Originally from Western Sydney, he is interested in the intersection of computational methods and demographic research, exploring how new technologies can help us better understand social patterns and life trajectories.</p>
                 
+                <h2>Working Papers</h2>
+                
+                <div class="paper">
+                    <p><strong>V. Satish, F. Hafner, S. Kapoor, M. Luken, L. Liu, T. Liu, J. Perdomo, B. Stroebl, K. Vafa, M. Verhagen, M. Salganik.</strong> Large-language Models as Foundation Models for Social Research</p>
+                    <p class="abstract"><em>Abstract:</em> The foundation model paradigm is changing predictive modeling, allowing researchers to adapt a single model imbued with internet-scale data to a wide range of downstream prediction tasks. There are numerous emerging pathways for using foundation models in social research, and this paper explores one: using large language models (LLMs) as foundation models for individual-level life outcome prediction. We implemented our model—named <em>Cruijff</em>—for the PreFer common-task challenge, which required using Dutch Population Registry data to predict fertility outcomes. While our approach did not outperform traditional machine learning methods, we make three key contributions: (1) providing a strong comparison between foundation models and other approaches to individual-life outcome prediction, (2) identifying key challenges applying foundation models to Registry data, and (3) highlighting next steps for the emerging field of foundation models in social research.</p>
+                </div>
+                
+                <div class="paper">
+                    <p><strong>V. Satish.</strong> The Declining Middle: Changes in Subjective Social Class in the United States, 1972-2018</p>
+                    <p class="abstract"><em>Abstract:</em> The share of Americans identifying as middle class has shrunk while the lower class has doubled since the 2000s, according to General Social Survey data spanning 1972-2018. Using machine learning methods applied to 356 survey questions, I find that that education, labor force status, and perceptions of family income are the primary predictors of subjective social class and that their predictive power has increased over time. I describe that the association between college attendance and middle class identification has weakened, while the lower class increasingly comprises Americans who do not work full time or perceive their income as below average. Crucially, predictors of subjective social class extend beyond material circumstances: people who perceived their income as below average became substantially more likely to identify as lower class (increasing from 13% to 24% between 1972 and 2018) despite maintaining the same level of inflation-adjusted income. Analysis of panel data between 2006 and 2014 reveals that class identity is more fluid than traditionally assumed—only half of those identifying as lower class in a given wave had identified as lower class previously.</p>
+                </div>
+                
+                <div class="paper">
+                    <p><strong>A. Adsera, F. Querin, V. Satish.</strong> Can the Gendered Sorting of Occupations Explain Wage Differentials Across Educational Levels in the US?</p>
+                    <p class="abstract"><em>Abstract:</em> The persistence of gender earnings gaps, despite women having higher levels of education, runs in contrast to predictions from models of human capital accumulation. To address this, we ask whether men and women occupy different types of jobs even with the same education. This may account for gender differentials if women either sort or are discouraged from occupying jobs with characteristics that make them high paying. We are primarily interested in understanding the role of educational attainment in determining gendered occupational sorting. Recent studies highlight the importance of occupation and sector in perpetuating the gender wage gap, but their focus is mostly on the highly educated workers. Using data from the American Community Survey (ACS) along with O*NET occupation information, we focus on five dimensions of occupational characteristics that may reflect sorting by gender and education: contact with others, autonomy, leadership, machine-dependency, and time pressure. Preliminary results confirm gendered prevalence in these occupational characteristics, with women performing jobs with higher contact with others and less machine use. We document educational gradients in the wage returns to these characteristics. Results from Oaxaca-Binder decompositions highlight how our models explain gender differentials more for highly educated workers than for those with less education, underscoring the importance of further research specifically on workers who do not have a college degree.</p>
+                </div>
+                
+
             </div>
         </div>
     </div>
