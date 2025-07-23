@@ -32,6 +32,17 @@
             font-weight: normal;
         }
         
+        .email-link {
+            color: #333;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        
+        .email-link:hover {
+            color: #555;
+        }
+        
         .content {
             display: flex;
             gap: 40px;
@@ -108,8 +119,7 @@
     <div class="container">
         <div class="header">
             <h1>Varun Satish</h1>
-            <h2> varun.satish@princeton.edu </h2>
-        </div>
+            <h2><span class="email-link" onclick="sendEmail()" style="font-weight: normal;">varun.satish@princeton.edu</span></h2>        </div>
         
         <div class="content">
             <div class="photo-section">
@@ -146,5 +156,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function sendEmail() {
+            const email = 'varun.satish@princeton.edu';
+            window.location.href = 'mailto:' + email;
+        }
+    </script>
 </body>
 </html>
