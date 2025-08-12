@@ -43,14 +43,9 @@
             text-decoration: underline;
         }
         
-        .content {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-        }
-        
         .photo-section {
-            flex-shrink: 0;
+            text-align: center;
+            margin: 30px 0 40px 0;
         }
         
         .photo {
@@ -58,15 +53,20 @@
             height: 300px;
             background-color: #d4d4d4;
             border: 1px solid #999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-style: italic;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
-        .bio-section {
-            flex: 1;
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            image-rendering: optimizeQuality;
+            -ms-interpolation-mode: bicubic;
         }
         
         .bio-section h2 {
@@ -99,11 +99,6 @@
         }
         
         @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-                align-items: center;
-            }
-            
             .photo {
                 width: 200px;
                 height: 250px;
@@ -119,40 +114,37 @@
     <div class="container">
         <div class="header">
             <h1>Varun Satish</h1>
-            <h2><span class="email-link" onclick="sendEmail()" style="font-weight: normal;">varun.satish@princeton.edu</span></h2>        </div>
+            <h2><span class="email-link" onclick="sendEmail()" style="font-weight: normal;">varun.satish@princeton.edu</span></h2>
+        </div>
         
-        <div class="content">
-            <div class="photo-section">
-                <div class="photo">
-                    <img src="assets/website_photo.jpg" alt="Varun Satish" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
+        <div class="photo-section">
+            <div class="photo">
+                <img src="assets/website_photo.jpg" alt="Varun Satish">
+            </div>
+        </div>
+        
+        <div class="bio-section">
+            <h2>About</h2>
+            <p>I am a PhD student in Demography at Princeton University. My current projects include using language models to study the life course, and using machine learning to uncover shifting perceptions of social class in the United States over the last 50 years. I am originally from Western Sydney, Australia. </p>
+            
+            <p></p>
+            
+            <h2>Working Papers (please email me for drafts)</h2>
+            
+            <div class="paper">
+                <p><strong>V. Satish, F. Hafner, S. Kapoor, M. Luken, L. Liu, T. Liu, J. Perdomo, B. Stroebl, K. Vafa, M. Verhagen, M. Salganik.</strong> Language Models for Life Outcome Prediction</p>
+                <p class="abstract"><em>Abstract:</em> Predictive modeling is undergoing a paradigm shift toward general-purpose models trained on internet-scale data that can be adapted for many different prediction tasks. Central to this paradigm are large-language models (LLMs), which we show can be adapted for a task normally tackled by classic machine learning (ML): life outcome prediction. We converted individual-level raw data from the Dutch Population Registry into text format, then fine-tuned an open-weight LLM to predict whether or not individuals had a child between 2021 and 2023. We demonstrated the viability of LLMs for life outcome prediction by successfully outperforming a demographic benchmark. We illustrated their flexibility by showing that a hybrid strategy—incorporating individual-level predictions from a boosted decision tree into the text inputs—improved performance. Although the approach was outperformed by a classic ML approach, we believe it holds potential for the future. First, LLMs for life outcome prediction may eventually outperform classic ML if researchers enrich text inputs with data from more domains or through external improvements in open-weight LLMs. Second, this approach naturally supports functionalities that enable fundamentally different research opportunities than classical ML, such as generating plausible continuations of unseen life courses and representation learning. </p>
             </div>
             
-            <div class="bio-section">
-                <h2>About</h2>
-                <p>I am a PhD student in Demography at Princeton University. My current projects include using language models to study the life course, and using machine learning to uncover shifting perceptions of social class in the United States over the last 50 years. I am originally from Western Sydney, Australia. </p>
-                
-                <p></p>
-                
-                <h2>Working Papers (please email me for drafts)</h2>
-                
-                <div class="paper">
-                    <p><strong>V. Satish, F. Hafner, S. Kapoor, M. Luken, L. Liu, T. Liu, J. Perdomo, B. Stroebl, K. Vafa, M. Verhagen, M. Salganik.</strong> Language Models for Life Outcome Prediction</p>
-                    <p class="abstract"><em>Abstract:</em> Predictive modeling is undergoing a paradigm shift toward general-purpose models trained on internet-scale data that can be adapted for many different prediction tasks. Central to this paradigm are large-language models (LLMs), which we show can be adapted for a task normally tackled by classic machine learning (ML): life outcome prediction. We converted individual-level raw data from the Dutch Population Registry into text format, then fine-tuned an open-weight LLM to predict whether or not individuals had a child between 2021 and 2023. We demonstrated the viability of LLMs for life outcome prediction by successfully outperforming a demographic benchmark. We illustrated their flexibility by showing that a hybrid strategy—incorporating individual-level predictions from a boosted decision tree into the text inputs—improved performance. Although the approach was outperformed by a classic ML approach, we believe it holds potential for the future. First, LLMs for life outcome prediction may eventually outperform classic ML if researchers enrich text inputs with data from more domains or through external improvements in open-weight LLMs. Second, this approach naturally supports functionalities that enable fundamentally different research opportunities than classical ML, such as generating plausible continuations of unseen life courses and representation learning. </p>
-                </div>
-                
-                <div class="paper">
-                    <p><strong>V. Satish.</strong> The Declining Middle: Changes in Subjective Social Class in the United States, 1972-2018</p>
-                    <p class="abstract"><em>Abstract:</em> Americans' perceptions of their social class have changed dramatically between 1972 and 2018. The share identifying as lower class has doubled since the 2000s, while the middle class has shrunk according to General Social Survey (GSS) data. Employing machine learning methods to search across 356 GSS survey questions, I find that education, labor force status, and perceptions of family income account for the most variation in subjective class identification—confirming sociological theory. Additionally, these factors have become stronger predictors of lower class identification over time, with the rise being particularly stark among those with less than a high school education, those not working full-time, and those perceiving their income as below average. Crucially, this rise in lower class identification cannot be attributed solely to material decline: people who perceived their income as below average became substantially more likely to identify as lower class (increasing from 13% to 24% between 1972 and 2018) despite maintaining the same level of inflation-adjusted income. Panel data between 2006 and 2014 reveals that class identity is more fluid than traditionally assumed—only half of those identifying as lower class in a given wave had identified as lower class previously. 
-             </p>
-                </div>
-                
-                <div class="paper">
-                    <p><strong>A. Adsera, F. Querin, V. Satish.</strong> Can the Gendered Sorting of Occupations Explain Wage Differentials Across Educational Levels in the US?</p>
-                    <p class="abstract"><em>Abstract:</em> The persistence of gender earnings gaps, despite women having higher levels of education, runs in contrast to predictions from models of human capital accumulation. To address this, we ask whether men and women occupy different types of jobs even with the same education. This may account for gender differentials if women either sort or are discouraged from occupying jobs with characteristics that make them high paying. We are primarily interested in understanding the role of educational attainment in determining gendered occupational sorting. Recent studies highlight the importance of occupation and sector in perpetuating the gender wage gap, but their focus is mostly on the highly educated workers. Using data from the American Community Survey (ACS) along with O*NET occupation information, we focus on five dimensions of occupational characteristics that may reflect sorting by gender and education: contact with others, autonomy, leadership, machine-dependency, and time pressure. Preliminary results confirm gendered prevalence in these occupational characteristics, with women performing jobs with higher contact with others and less machine use. We document educational gradients in the wage returns to these characteristics. Results from Oaxaca-Binder decompositions highlight how our models explain gender differentials more for highly educated workers than for those with less education, underscoring the importance of further research specifically on workers who do not have a college degree.</p>
-                </div>
-                
-
+            <div class="paper">
+                <p><strong>V. Satish.</strong> The Declining Middle: Changes in Subjective Social Class in the United States, 1972-2018</p>
+                <p class="abstract"><em>Abstract:</em> Americans' perceptions of their social class have changed dramatically between 1972 and 2018. The share identifying as lower class has doubled since the 2000s, while the middle class has shrunk according to General Social Survey (GSS) data. Employing machine learning methods to search across 356 GSS survey questions, I find that education, labor force status, and perceptions of family income account for the most variation in subjective class identification—confirming sociological theory. Additionally, these factors have become stronger predictors of lower class identification over time, with the rise being particularly stark among those with less than a high school education, those not working full-time, and those perceiving their income as below average. Crucially, this rise in lower class identification cannot be attributed solely to material decline: people who perceived their income as below average became substantially more likely to identify as lower class (increasing from 13% to 24% between 1972 and 2018) despite maintaining the same level of inflation-adjusted income. Panel data between 2006 and 2014 reveals that class identity is more fluid than traditionally assumed—only half of those identifying as lower class in a given wave had identified as lower class previously. 
+         </p>
+            </div>
+            
+            <div class="paper">
+                <p><strong>A. Adsera, F. Querin, V. Satish.</strong> Can the Gendered Sorting of Occupations Explain Wage Differentials Across Educational Levels in the US?</p>
+                <p class="abstract"><em>Abstract:</em> The persistence of gender earnings gaps, despite women having higher levels of education, runs in contrast to predictions from models of human capital accumulation. To address this, we ask whether men and women occupy different types of jobs even with the same education. This may account for gender differentials if women either sort or are discouraged from occupying jobs with characteristics that make them high paying. We are primarily interested in understanding the role of educational attainment in determining gendered occupational sorting. Recent studies highlight the importance of occupation and sector in perpetuating the gender wage gap, but their focus is mostly on the highly educated workers. Using data from the American Community Survey (ACS) along with O*NET occupation information, we focus on five dimensions of occupational characteristics that may reflect sorting by gender and education: contact with others, autonomy, leadership, machine-dependency, and time pressure. Preliminary results confirm gendered prevalence in these occupational characteristics, with women performing jobs with higher contact with others and less machine use. We document educational gradients in the wage returns to these characteristics. Results from Oaxaca-Binder decompositions highlight how our models explain gender differentials more for highly educated workers than for those with less education, underscoring the importance of further research specifically on workers who do not have a college degree.</p>
             </div>
         </div>
     </div>
